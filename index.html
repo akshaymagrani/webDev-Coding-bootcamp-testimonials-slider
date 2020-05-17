@@ -1,38 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
+    <!-- External font link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Tanya Sinclair
-  UX Engineer
+    <!-- External CSS Stylesheet Link 👍 -->
+    <link href="index.css" rel="stylesheet" type="text/css" />
 
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
+    <!-- External Javascript link 👍 -->
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Tile1 Tanya Sinclair-->
+      <div id="tile1" class="tile1 myslides fade">
+        <div>
+          <div class="bg-image">
+            <img
+              src="images/image-tanya.jpg"
+              alt="image og Tanya Sinclair"
+              class="image"
+            />
+          </div>
+          <div class="slider">
+            <button
+              name="button"
+              id="buttonPrev"
+              class="button buttonPrev"
+              onclick="tileChangeP()"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <path
+                  fill="none"
+                  stroke="#8585AC"
+                  stroke-width="3"
+                  d="M11 1L3 9l8 8"
+                />
+              </svg>
+            </button>
+            <button
+              name="button"
+              id="buttonNext"
+              class="button buttonNext"
+              onclick="tileChangeN()"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                <path
+                  fill="none"
+                  stroke="#8585AC"
+                  stroke-width="3"
+                  d="M2 1l8 8-8 8"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="content-div">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="120"
+            height="100"
+            class="quote"
+          >
+            <defs>
+              <linearGradient
+                id="a"
+                x1="31.368%"
+                x2="100%"
+                y1="72.917%"
+                y2="19.557%"
+              >
+                <stop offset="0%" stop-color="#9975D0" />
+                <stop offset="100%" stop-color="#4A3FDB" />
+              </linearGradient>
+            </defs>
+            <path
+              fill="url(#a)"
+              fill-rule="evenodd"
+              d="M52.615 0L24.858 100H0V0h52.615zM120 0L92.243 100H67.385V0H120z"
+              opacity=".15"
+            />
+          </svg>
+          <p class="description">
+            “ I’ve been interested in coding for a while but never taken the
+            jump, until now. I couldn’t recommend this course enough. I’m now in
+            the job of my dreams and so excited about the future. ”
+          </p>
+          <p class="name">Tanya Sinclair</p>
+          <p class="post">UX Engineer</p>
+        </div>
+      </div>
+      <div class="footer-curve">
+        <svg xmlns="http://www.w3.org/2000/svg" width="610" height="154">
+          <path
+            fill="#F4F4FC"
+            fill-rule="evenodd"
+            d="M610 154C469.493 123.42 358.432 86.087 276.818 42S102.93-11.42 0 14v140h610z"
+          />
+        </svg>
+      </div>
 
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <!-- Tile2 John Tarkpor-->
+      <div id="tile2" class="tile2 myslides fade">
+        <div>
+          <div class="bg-image">
+            <img
+              src="images/image-john.jpg"
+              alt="image of John"
+              class="image"
+            />
+          </div>
+          <div class="slider">
+            <button
+              name="button"
+              id="buttonPrev"
+              class="button buttonPrev"
+              onclick="tileChangeP()"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <path
+                  fill="none"
+                  stroke="#8585AC"
+                  stroke-width="3"
+                  d="M11 1L3 9l8 8"
+                />
+              </svg>
+            </button>
+            <button
+              name="button"
+              id="buttonNext"
+              class="button buttonNext"
+              onclick="tileChangeN()"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                <path
+                  fill="none"
+                  stroke="#8585AC"
+                  stroke-width="3"
+                  d="M2 1l8 8-8 8"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="content-div">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="120"
+            height="100"
+            class="quote"
+          >
+            <defs>
+              <linearGradient
+                id="a"
+                x1="31.368%"
+                x2="100%"
+                y1="72.917%"
+                y2="19.557%"
+              >
+                <stop offset="0%" stop-color="#9975D0" />
+                <stop offset="100%" stop-color="#4A3FDB" />
+              </linearGradient>
+            </defs>
+            <path
+              fill="url(#a)"
+              fill-rule="evenodd"
+              d="M52.615 0L24.858 100H0V0h52.615zM120 0L92.243 100H67.385V0H120z"
+              opacity=".15"
+            />
+          </svg>
+          <p class="description">
+            “ If you want to lay the best foundation possible I’d recommend
+            taking this course. The depth the instructors go into is incredible.
+            I now feel so confident about starting up as a professional
+            developer. ”
+          </p>
+          <p class="name">John Tarkpor</p>
+          <p class="post">Junior Front-end Developer</p>
+        </div>
+      </div>
+      <div class="footer-curve">
+        <svg xmlns="http://www.w3.org/2000/svg" width="610" height="154">
+          <path
+            fill="#F4F4FC"
+            fill-rule="evenodd"
+            d="M610 154C469.493 123.42 358.432 86.087 276.818 42S102.93-11.42 0 14v140h610z"
+          />
+        </svg>
+      </div>
+
+      <!-- Footer-->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor </a
+        >. Coded by <a href="#">Akshaykumar Magrani</a>.
+      </div>
+    </main>
+  </body>
 </html>
