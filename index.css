@@ -147,7 +147,7 @@ body {
 }
 @media screen and (min-width: 700px) {
   #tile2 {
-    display: flex;
+    display: none;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
